@@ -1,211 +1,281 @@
-# RecoverAI
+RecoverAI
 
-> AI-powered revenue recovery system for failed payments.
+AI-powered revenue recovery for failed payments.
 
-## 🚀 Overview
+RecoverAI is an AI-powered revenue recovery system that turns failed
+payments into measurable recovery opportunities. Instead of only
+detecting a failed payment, RecoverAI moves each case through detection,
+diagnosis, policy selection, execution, recovery measurement, and
+AI-powered explanation.
 
-RecoverAI is an AI-powered revenue recovery system designed to transform failed payments into measurable recovery opportunities.
+🚀 What RecoverAI Does
 
-Instead of simply detecting failed payments, RecoverAI:
+RecoverAI follows this end-to-end workflow:
 
-1. Detects failed payments
-2. Diagnoses the failure
-3. Selects a recovery policy
-4. Executes the recovery action
-5. Records the recovery outcome
-6. Measures recovered revenue
-7. Uses Google Gemini to explain the decision
+Payment Data → Detection → Diagnosis → Policy → Execution → Recovery
+Outcome → Final Metrics
 
-## 🎯 Problem
+The system answers: 1. Why did the payment fail? 2. What recovery action
+should be taken? 3. Was the action executed? 4. Did the payment actually
+recover?
 
-Failed payments represent potential lost revenue.
+🧠 Core Pipeline
 
-Traditional systems may identify that a payment failed, but they often don't provide an intelligent workflow for deciding what should happen next.
-
-RecoverAI addresses this by connecting payment failure detection, ML diagnosis, policy decisions, execution, recovery outcomes, and AI explanations.
-
-## 🧠 RecoverAI Pipeline
-
-Payment
-↓
 Detection
-↓
-Diagnosis
-↓
-AI Policy
-↓
-Recovery Action
-↓
-Recovery Outcome
-↓
-Metrics
-↓
-Gemini Explanation
-
-## 🤖 AI Components
-
-### Detection
 
 Identifies failed payment cases that require recovery.
 
-### Diagnosis
+Diagnosis
 
-Classifies the likely reason for the payment failure and provides confidence.
+Classifies the likely failure category and provides a confidence score.
 
-### AI Policy
+AI Policy
 
-Converts the diagnosis into an operational recovery action.
+Converts diagnosis and confidence into an operational recovery decision.
+Actions include retry_now, retry_later, send_reminder, and
+escalate_human.
 
-Examples include:
+Execution
 
-- Retry immediately
-- Send recovery link
-- Escalate to human review
+Records whether the selected recovery action was sent, skipped, or
+otherwise handled.
 
-### Gemini Explanation
-
-Google Gemini converts the structured RecoverAI decision into a human-readable explanation.
-
-Gemini explains the existing pipeline decision rather than replacing the detection, diagnosis, policy, or recovery systems.
-
-## 📊 Evaluation Results
-
-Synthetic evaluation results:
-
-- Records evaluated: 75
-- Recovery attempts: 23
-- Successful recoveries: 12
-- Failed recoveries: 11
-- Recovery rate: 52.17%
-- Revenue at risk: ₹290,647.66
-- Revenue recovered: ₹153,605.40
-- Revenue unrecovered: ₹137,042.26
-- Exceptions: 52
-
-> These are synthetic evaluation results and do not represent real recovered Razorpay funds.
-
-## 🏗️ Architecture
-
-Razorpay/Test Payments
-        ↓
-FastAPI Backend
-        ↓
-Payment Data
-        ↓
-Detection Layer
-        ↓
-Diagnosis Layer
-        ↓
-AI Policy Layer
-        ↓
-Execution Layer
-        ↓
 Recovery Outcome
-        ↓
-Metrics & Dashboard
 
-Google Gemini provides the explanation layer over the structured recovery decisions.
+Measures the actual outcome of the recovery attempt.
 
-## 🛠️ Tech Stack
+An executed recovery action is not the same as a recovered
+payment.
 
-### Backend
+Final Metrics
 
-- Python
-- FastAPI
-- Pandas
-- NumPy
-- Scikit-learn
-- Razorpay API
-- Google Gemini
+Aggregates attempts, successful recoveries, failed recoveries, revenue
+at risk, recovered revenue, unrecovered revenue, and exceptions.
 
-### Frontend
+Gemini Explanation
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
+Google Gemini provides a human-readable explanation of an individual
+RecoverAI case using structured information already produced by the
+pipeline. Gemini is an explanation layer; it does not replace the
+detection, diagnosis, policy, execution, or recovery-outcome logic.
 
-### Data & ML
+🤖 AI-Powered Payment Investigation
 
-- Synthetic Razorpay payment data
-- Machine learning
-- Recovery policy engine
-- Evaluation metrics
+Payment Lookup lets an operator enter a payment ID and request an
+AI-grounded investigation. The explanation can summarize what happened,
+why it happened, the diagnosed bucket and confidence, the RecoverAI
+decision, execution status, and recovery outcome.
 
-## 📁 Project Structure
+📊 Evaluation Results
+
+Metric                         Result
+
+Records evaluated                  75
+Recovery attempts                  23
+Successful recoveries              12
+Failed recoveries                  11
+Recovery rate                  52.17%
+Revenue at risk           ₹290,647.66
+Revenue recovered         ₹153,605.40
+Revenue unrecovered       ₹137,042.26
+Exceptions                         52
+
+Important: These are synthetic evaluation results and do not
+represent real recovered Razorpay funds.
+
+🏗️ Architecture
+
+Payment Data
+     ↓
+Detection
+     ↓
+Diagnosis
+     ↓
+Policy
+     ↓
+Execution
+     ↓
+Recovery Outcome
+     ↓
+Final Metrics
+
+Serving layer:
+
+FastAPI → Next.js Dashboard
+
+Gemini provides the explanation layer over structured recovery records.
+
+🖥️ Dashboard
+
+The dashboard provides: - Overview --- revenue risk, recovered
+revenue, recovery rate, and exceptions - Revenue --- recovery
+performance and revenue breakdown - AI Policy --- policy action
+distribution and individual policy decisions - Recovery Audit ---
+recovery outcomes and payment-level records - Exceptions --- failed
+or review-required recovery cases - Payment Lookup --- payment
+investigation with Gemini - Architecture --- visual RecoverAI
+pipeline
+
+📸 Screenshots
+
+Add the screenshots to a screenshots/ folder and use:
+
+Overview
+
+
+
+Revenue
+
+
+
+AI Policy
+
+
+
+Recovery Audit
+
+
+
+Exceptions
+
+
+
+Gemini Payment Investigation
+
+
+
+Architecture
+
+
+
+🛠️ Tech Stack
+
+Backend
+
+Python
+
+FastAPI
+
+Uvicorn
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Joblib
+
+Razorpay SDK
+
+Google Gemini
+
+Python Dotenv
+
+Frontend
+
+Next.js
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+AI/ML
+
+Machine-learning based payment diagnosis
+
+Confidence-based recovery policy
+
+Recovery outcome evaluation
+
+Google Gemini for grounded explanations
+
+📁 Project Structure
 
 RecoverAI/
-│
 ├── backend/
+│   ├── api.py
+│   ├── pipeline.py
+│   ├── explanation_layer.py
+│   ├── audit_metrics_layer.py
+│   ├── recovery_outcome_layer.py
+│   ├── razorpay_service.py
+│   ├── webhook.py
+│   ├── requirements.txt
+│   └── ...
 │
 ├── fronted/
-│
-├── outputs/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   └── package.json
 │
 ├── Decision/
-│
+├── outputs/
 ├── dashboard.py
-│
 ├── .gitignore
-│
 └── README.md
 
-## ⚙️ Running the Backend
+⚙️ Setup
+
+Backend
 
 cd backend
-
-Create a virtual environment:
-
-python -m venv .venv
-
-Activate it on Windows:
-
-.venv\Scripts\activate
-
-Install dependencies:
-
 pip install -r requirements.txt
 
-Create a local `.env` file and add your API credentials.
+Create a local .env file with required credentials, for example:
+
+GEMINI_API_KEY=your_gemini_api_key
+
+Do not commit .env or API keys to GitHub.
 
 Start FastAPI:
 
-uvicorn api:app --reload
+python -m uvicorn api:app --reload
 
-## 💻 Running the Frontend
+The backend runs locally on http://127.0.0.1:8000.
+
+Frontend
+
+Open another terminal:
 
 cd fronted
-
 npm install
-
 npm run dev
 
-Open the local Next.js application in your browser.
+Then open the local Next.js URL, normally http://localhost:3000.
 
-## 🔐 Environment Variables
+🔐 Environment Variables
 
-Never commit API keys to GitHub.
+Keep secrets local. The repository should contain placeholders such as
+.env.example, never real API keys.
 
-Create a local `.env` file:
+The .gitignore should exclude .env, .env.*, .venv/,
+__pycache__/, *.pyc, fronted/node_modules/, and fronted/.next/.
 
-GEMINI_API_KEY=your_key_here
+🎥 Demo
 
-Add any other required credentials locally.
+The demo flow is:
 
-## 🎥 Demo
+Overview → Architecture → AI Policy → Recovery Audit → Payment Lookup
+→ Gemini Explanation → Results
 
-Demo video:
+Add the final hackathon demo-video link here:
 
-[Add your hackathon demo link here]
+[Demo Video](YOUR_DEMO_VIDEO_LINK)
 
-## 💡 Key Idea
+💡 Key Idea
 
-RecoverAI follows the principle:
+Prediction → Decision → Action → Outcome → Explanation
 
-**Prediction → Decision → Action → Outcome → Explanation**
+The goal is not simply to detect failed payments. The goal is to turn
+payment failures into intelligent, auditable, and measurable recovery
+opportunities.
 
-The goal is not just to detect failed payments, but to intelligently turn them into measurable recovery opportunities.
+🏆 Hackathon Focus
 
-## 🏆 Hackathon
-
-Built as an AI-powered revenue recovery solution for failed payment workflows.
+RecoverAI demonstrates how machine learning, policy-based decisioning,
+payment operations, recovery measurement, and generative AI can work
+together in a single revenue recovery workflow.
