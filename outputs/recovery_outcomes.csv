@@ -1,0 +1,24 @@
+payment_id,action,amount,recovery_probability,outcome,recovered_amount,reason
+pay_86f8a929396a4a,retry_now,12769.22,0.27,recovered,12769.22,Synthetic recovery success
+pay_f5863af444e14d,retry_now,9773.96,0.71,failed,0.0,Synthetic recovery unsuccessful
+pay_8daa230f1bc04f,retry_now,573.92,0.8,failed,0.0,Synthetic recovery unsuccessful
+pay_ee4d851071674e,retry_now,15218.98,0.79,failed,0.0,Synthetic recovery unsuccessful
+pay_8762b97dbbb34c,retry_now,28040.35,0.62,failed,0.0,Synthetic recovery unsuccessful
+pay_a5da5901405d4b,retry_now,21593.98,0.16,recovered,21593.98,Synthetic recovery success
+pay_c435a704261a49,retry_now,11548.23,0.62,failed,0.0,Synthetic recovery unsuccessful
+pay_3b952fa41a6642,retry_now,10248.57,0.65,failed,0.0,Synthetic recovery unsuccessful
+pay_ba4a856830f143,retry_now,4541.68,0.17,recovered,4541.68,Synthetic recovery success
+pay_2531470561594c,retry_now,17014.15,0.32,recovered,17014.15,Synthetic recovery success
+pay_f1d7b74656c145,retry_now,9649.76,0.02,recovered,9649.76,Synthetic recovery success
+pay_9adb916bb74a47,retry_now,2699.74,0.09,recovered,2699.74,Synthetic recovery success
+pay_affec597019046,retry_now,34136.15,0.53,recovered,34136.15,Synthetic recovery success
+pay_52bf197c365e4a,retry_now,9210.51,0.2,recovered,9210.51,Synthetic recovery success
+pay_e7e9905e95fc45,retry_now,4600.89,0.42,recovered,4600.89,Synthetic recovery success
+pay_034312d49fa14c,retry_now,14919.95,0.68,failed,0.0,Synthetic recovery unsuccessful
+pay_a3240a1f508c47,retry_now,1166.38,0.61,failed,0.0,Synthetic recovery unsuccessful
+pay_b24bb629a14a4b,retry_now,20161.32,0.46,recovered,20161.32,Synthetic recovery success
+pay_74a4633a7fea40,retry_now,42162.63,0.64,failed,0.0,Synthetic recovery unsuccessful
+pay_5fa331218bab45,retry_now,6202.99,0.25,recovered,6202.99,Synthetic recovery success
+pay_8add8044a8b944,retry_now,11025.01,0.21,recovered,11025.01,Synthetic recovery success
+pay_6ad5efc4403e48,retry_now,2012.16,0.77,failed,0.0,Synthetic recovery unsuccessful
+pay_1b8867ff569043,retry_now,1377.13,0.9,failed,0.0,Synthetic recovery unsuccessful

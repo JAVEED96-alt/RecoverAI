@@ -1,0 +1,17 @@
+{
+    "records_evaluated": 75,
+    "policy_decisions": 75,
+    "retry_now": 23,
+    "retry_later": 10,
+    "send_reminder": 1,
+    "human_escalations": 41,
+    "recovery_attempts": 23,
+    "successful_recoveries": 12,
+    "failed_recoveries": 11,
+    "recovery_rate_percent": 52.17,
+    "revenue_at_risk": 290647.66,
+    "revenue_recovered": 153605.4,
+    "revenue_unrecovered": 137042.26,
+    "exception_count": 52,
+    "evaluation_type": "synthetic"
+}

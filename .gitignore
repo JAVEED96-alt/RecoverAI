@@ -1,0 +1,18 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Next.js
+fronted/node_modules/
+fronted/.next/
+fronted/out/
+
+# Logs
+*.log

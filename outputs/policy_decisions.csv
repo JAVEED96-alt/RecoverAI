@@ -1,0 +1,76 @@
+payment_id,diagnosed_bucket,confidence,final_bucket_used,action,reason,attempt_number,max_attempts_allowed,escalate,retry_at
+pay_198cc292508e4c,abandoned_checkout,0.377,escalate_human,escalate_human,Model confidence 0.38 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_3f54f4ed4b644d,retryable_with_delay,0.549,escalate_human,escalate_human,Model confidence 0.55 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_448b26a786f24f,escalate_human,0.763,escalate_human,escalate_human,Low model confidence or high-risk signal — routed to human review instead of auto-acting.,1,0,True,
+pay_2bb17e43ca4541,abandoned_checkout,0.478,escalate_human,escalate_human,Model confidence 0.48 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_4744ac83dae044,abandoned_checkout,0.494,escalate_human,escalate_human,Model confidence 0.49 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_86f8a929396a4a,retryable_transient,0.99,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_fad24497accc4f,non_retryable,0.686,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_f5863af444e14d,retryable_transient,0.945,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_8daa230f1bc04f,retryable_transient,0.94,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_b0414e54d29d48,abandoned_checkout,0.377,escalate_human,escalate_human,Model confidence 0.38 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_df58c3ef7d5d45,abandoned_checkout,0.412,escalate_human,escalate_human,Model confidence 0.41 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_ee4d851071674e,retryable_transient,0.91,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_894811081a0645,abandoned_checkout,0.638,abandoned_checkout,send_reminder,Customer abandoned checkout — a reminder/payment link nudge is the appropriate action.,1,2,False,2026-09-04 22:01:25
+pay_b8583eec85e043,retryable_with_delay,0.642,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_8762b97dbbb34c,retryable_transient,0.97,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_541fb5b6b7e341,retryable_transient,0.538,escalate_human,escalate_human,Model confidence 0.54 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_03b9eede25884d,non_retryable,0.744,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_a5da5901405d4b,retryable_transient,0.688,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_7583fb49df2e43,abandoned_checkout,0.366,escalate_human,escalate_human,Model confidence 0.37 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_c435a704261a49,retryable_transient,0.96,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_ec6ba30d08db4d,non_retryable,0.435,escalate_human,escalate_human,Model confidence 0.44 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_19943116b8314c,non_retryable,0.4,escalate_human,escalate_human,Model confidence 0.40 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_99ef3457f10941,retryable_with_delay,0.69,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_bc0789d5882c4c,non_retryable,0.54,escalate_human,escalate_human,Model confidence 0.54 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_2dd9b14cbcae4c,retryable_with_delay,0.573,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_6789e50f332e45,non_retryable,0.555,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_f1d67ea4b2d040,non_retryable,0.646,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_3b952fa41a6642,retryable_transient,0.796,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_87a81cc2ed8643,non_retryable,0.403,escalate_human,escalate_human,Model confidence 0.40 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_476a0f02115048,retryable_with_delay,0.635,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_815990007dd041,retryable_with_delay,0.373,escalate_human,escalate_human,Model confidence 0.37 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_719997839cce48,non_retryable,0.768,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_756f07a8e80444,retryable_with_delay,0.404,escalate_human,escalate_human,Model confidence 0.40 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_4de63ce0dac049,retryable_transient,0.379,escalate_human,escalate_human,Model confidence 0.38 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_35746940215c49,non_retryable,0.441,escalate_human,escalate_human,Model confidence 0.44 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_ba4a856830f143,retryable_transient,0.97,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_4463614bbe6c45,retryable_with_delay,0.641,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_2531470561594c,retryable_transient,0.97,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_2411b287e2a64d,non_retryable,0.431,escalate_human,escalate_human,Model confidence 0.43 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_c12ca86133284d,non_retryable,0.65,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_0d0f68eeb6e244,retryable_with_delay,0.727,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_cfbd430b58d94b,abandoned_checkout,0.454,escalate_human,escalate_human,Model confidence 0.45 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_44c254cbabf747,retryable_transient,0.508,escalate_human,escalate_human,Model confidence 0.51 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_f1d7b74656c145,retryable_transient,0.975,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_9adb916bb74a47,retryable_transient,0.57,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_32ef14b43cb44a,non_retryable,0.587,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_affec597019046,retryable_transient,0.777,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_216119fde87d4a,non_retryable,0.709,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_52bf197c365e4a,retryable_transient,0.899,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_94f071b753ef42,escalate_human,0.75,escalate_human,escalate_human,Low model confidence or high-risk signal — routed to human review instead of auto-acting.,1,0,True,
+pay_e7e9905e95fc45,retryable_transient,0.984,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_034312d49fa14c,retryable_transient,0.981,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_e93fee3805e449,non_retryable,0.418,escalate_human,escalate_human,Model confidence 0.42 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_59d6bd6a213542,abandoned_checkout,0.328,escalate_human,escalate_human,Model confidence 0.33 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_a3240a1f508c47,retryable_transient,0.925,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_b24bb629a14a4b,retryable_transient,0.98,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_6e5ff97815ce48,abandoned_checkout,0.411,escalate_human,escalate_human,Model confidence 0.41 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_7ca10fcce42a45,non_retryable,0.46,escalate_human,escalate_human,Model confidence 0.46 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_2a3858d4c0e14a,retryable_with_delay,0.766,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_74a4633a7fea40,retryable_transient,0.906,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_658b789db20d41,retryable_with_delay,0.525,escalate_human,escalate_human,Model confidence 0.52 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_5fa331218bab45,retryable_transient,0.598,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_8add8044a8b944,retryable_transient,0.94,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_88d134a65b714d,abandoned_checkout,0.478,escalate_human,escalate_human,Model confidence 0.48 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_0e396faf32c845,retryable_with_delay,0.573,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_eb9ca6b5d2b04a,abandoned_checkout,0.543,escalate_human,escalate_human,Model confidence 0.54 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_1c2830e255a641,non_retryable,0.568,escalate_human,escalate_human,Max retry attempts (0) reached for bucket 'non_retryable' — stopping and escalating.,1,0,True,
+pay_555df0f6b29245,abandoned_checkout,0.337,escalate_human,escalate_human,Model confidence 0.34 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_93ca49082e4a41,retryable_with_delay,0.399,escalate_human,escalate_human,Model confidence 0.40 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_4d5ed169c0dd4d,abandoned_checkout,0.318,escalate_human,escalate_human,Model confidence 0.32 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_6ad5efc4403e48,retryable_transient,0.97,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_9b21693c87134e,abandoned_checkout,0.398,escalate_human,escalate_human,Model confidence 0.40 below threshold 0.55 — cannot safely act on this diagnosis.,1,0,True,
+pay_d7b68697117047,retryable_with_delay,0.654,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
+pay_1b8867ff569043,retryable_transient,0.989,retryable_transient,retry_now,Transient failure (network/gateway) — safe to retry immediately.,1,3,False,2026-09-04 20:31:25
+pay_c133b4f00f844c,retryable_with_delay,0.615,retryable_with_delay,retry_later,Likely insufficient funds — retrying after a cooldown window improves success odds.,1,2,False,2026-09-05 20:01:25
